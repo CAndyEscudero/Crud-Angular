@@ -2,4 +2,9 @@
 <p>Esta es una aplicación de ejemplo creada con Angular</p>
 <h1>{{title}} hola</h1>
 <h1>Hola {{nombre}} sos de {{city}} forro</h1>
-<template>{{city}}</template>
+
+<mat-slide-toggle (change)="toggleChanged($event)">Activar opción</mat-slide-toggle>
+
+<app-barra-navegacion ></app-barra-navegacion>
+
+<router-outlet></router-outlet>
